@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This for fragment_introduction.xml -->
+    <dimen name="tvRightAddressMargin">91dp</dimen>
+    <dimen name="smallButtonWidth">130dp</dimen>
+    <dimen name="smallButtonHeight">55dp</dimen>
+
+    <!-- Button Corners using in blue_background.xml -->
+    <dimen name="buttonCorners">5dp</dimen>
+
+    <!-- This for fragment_account_options.xml -->
+    <dimen name="mediumButtonWidth">200dp</dimen>
+    <dimen name="mediumButtonHeight">55dp</dimen>
+    <dimen name="edtHeight">60dp</dimen>
+</resources>

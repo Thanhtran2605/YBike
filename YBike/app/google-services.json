@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "610307153918",
+    "project_id": "oldmotobikesec",
+    "storage_bucket": "oldmotobikesec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610307153918:android:6866e28120dfc070996aaf",
+        "android_client_info": {
+          "package_name": "com.example.doan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610307153918-nna4r6ee3dnu4qin32c7ham0to3t58p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR3imL0-ZqjS4QhdMjJydEZFacUGmSqeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610307153918-nna4r6ee3dnu4qin32c7ham0to3t58p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610307153918:android:7762cbdac6ec8bc3996aaf",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610307153918-nna4r6ee3dnu4qin32c7ham0to3t58p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR3imL0-ZqjS4QhdMjJydEZFacUGmSqeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610307153918-nna4r6ee3dnu4qin32c7ham0to3t58p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610307153918:android:ad2eca32520dbd06996aaf",
+        "android_client_info": {
+          "package_name": "com.example.productsadder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610307153918-nna4r6ee3dnu4qin32c7ham0to3t58p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR3imL0-ZqjS4QhdMjJydEZFacUGmSqeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610307153918-nna4r6ee3dnu4qin32c7ham0to3t58p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blury_pink_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Text View For Our Logo -->
+        <TextView
+            android:id="@+id/tvAppName"
+            style="@style/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:drawableStart="@drawable/logo_oval"
+            android:drawablePadding="6dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Text View Center Circle -->
+        <TextView
+            android:id="@+id/tvAddressForShopping"
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="@string/rightAddress"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+        <!-- Text View Below Center Circle -->
+        <TextView
+            android:id="@+id/tvQuality"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/quality"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/tvAddressForShopping"
+            app:layout_constraintStart_toStartOf="@+id/tvAddressForShopping"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddressForShopping"
+            tools:ignore="TextSizeCheck" />
+
+        <!-- Button for Register -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRegisterAccoungOptions"
+            style="@style/blueButtonStyle"
+            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_height="@dimen/mediumButtonHeight"
+            android:backgroundTint="@color/g_button"
+            android:text="Đăng ký"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuality"
+            app:layout_constraintStart_toStartOf="@+id/tvQuality"
+            app:layout_constraintTop_toTopOf="@+id/tvQuality" />
+
+        <!-- Button for Login -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLoginAccoungOptions"
+            style="@style/whiteButtonStyle"
+            android:layout_width="@dimen/mediumButtonWidth"
+            android:layout_height="@dimen/mediumButtonHeight"
+            android:layout_marginTop="10dp"
+            android:text="Đăng nhập"
+            app:layout_constraintEnd_toEndOf="@+id/tvQuality"
+            app:layout_constraintStart_toStartOf="@+id/tvQuality"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegisterAccoungOptions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

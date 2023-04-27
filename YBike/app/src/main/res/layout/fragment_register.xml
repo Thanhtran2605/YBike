@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blury_pink_background" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineLoginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <!-- Text View For Our Logo -->
+        <TextView
+            android:id="@+id/tvAppName"
+            style="@style/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableStart="@drawable/logo_oval"
+            android:drawablePadding="6dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Text View Let's Register -->
+        <TextView
+            android:id="@+id/tvLetRegister"
+            style="@style/h4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:text="Đăng ký"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/tvAppName" />
+
+        <!-- Text View Below Let's Login -->
+        <TextView
+            android:id="@+id/tvLetLogin"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Bạn đã có tài khoản ? Đăng nhập ngay !"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/tvLetRegister"
+            app:layout_constraintStart_toStartOf="@+id/tvLetRegister"
+            app:layout_constraintTop_toBottomOf="@+id/tvLetRegister"
+            tools:ignore="TextSizeCheck" />
+
+        <!-- Edit Text First Name (inputType chỉ định loại đầu vào)-->
+        <EditText
+            android:id="@+id/edtFirstNameRegister"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginTop="25dp"
+            android:hint="Họ"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/tvLetLogin" />
+
+        <!-- Edit Text Last Name (inputType chỉ định loại đầu vào)-->
+        <EditText
+            android:id="@+id/edtLastNameRegister"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginTop="18dp"
+            android:hint="Tên"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/edtFirstNameRegister" />
+
+        <!-- Edit Text Email (inputType chỉ định loại đầu vào)-->
+        <EditText
+            android:id="@+id/edtEmailRegister"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginTop="18dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/edtLastNameRegister" />
+
+        <!-- Edit Text Password (inputType chỉ định loại đầu vào)-->
+        <EditText
+            android:id="@+id/edtPasswordRegister"
+            style="@style/editText"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/edtHeight"
+            android:layout_marginTop="18dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/edtEmailRegister" />
+
+        <!-- Button for Register (spinning_bar_color mean màu thanh quay)-->
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/btnRegister"
+            style="@style/blueButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/mediumButtonHeight"
+            android:layout_marginTop="90dp"
+            android:backgroundTint="@color/g_button"
+            android:text="Đăng ký"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/edtEmailRegister"
+            app:spinning_bar_color="@color/white" />
+
+        <!-- Image with Facebook Register. This is image Facebook -->
+        <ImageView
+            android:id="@+id/facebookRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/facebook_login"
+            app:layout_constraintStart_toStartOf="@+id/guidelineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+        <!-- TextView with Facebook Register -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            app:layout_constraintBottom_toBottomOf="@+id/facebookRegister"
+            app:layout_constraintEnd_toEndOf="@+id/facebookRegister"
+            app:layout_constraintStart_toStartOf="@+id/facebookRegister"
+            app:layout_constraintTop_toTopOf="@+id/facebookRegister" />
+
+        <!-- Image View with Google Register. This is image Google -->
+        <ImageView
+            android:id="@+id/googleRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/google_login"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineLoginRight"
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+        <!-- Text View with Google Login -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            app:layout_constraintBottom_toBottomOf="@+id/googleRegister"
+            app:layout_constraintEnd_toEndOf="@+id/googleRegister"
+            app:layout_constraintStart_toStartOf="@+id/googleRegister"
+            app:layout_constraintTop_toTopOf="@+id/googleRegister" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

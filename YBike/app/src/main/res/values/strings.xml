@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YBike</string>
+    <string name="rightAddress">YBike\n Mua sắm thả ga \n Bất kỳ lúc nào</string>
+    <string name="introduction">Mua sắm thả ga</string>
+    <string name="quality">Tìm kiếm và lựa chọn\n xe máy cũ tốt nhất\n trên thị trường</string>
+</resources>
